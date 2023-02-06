@@ -23,7 +23,7 @@ function WorkoutDetails({workout}) {
         <h4>{workout.title}</h4>
         <p><strong> Load:{workout.load}</strong></p>
         <p>reps: {workout.reps}</p>
-        <p className='material-symbols-outlined'>{formatDistanceToNow(new Date(workout.createdAt),{addsuffix:true})}</p>
+        <p >{formatDistanceToNow(new Date(workout.createdAt),{addsuffix:true})}</p>
         <span className='material-symbols-outlined' onClick={handleClick}>delete</span>
     </div>
   )

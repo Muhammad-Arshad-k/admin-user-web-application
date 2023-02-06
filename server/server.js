@@ -1,8 +1,8 @@
 const express = require('express');
 const cors = require('cors');
 require('dotenv').config()
-const workouts = require('./routes/workout')
-
+const workoutRoutes = require('./routes/workout')
+const userRoutes = require('./routes/user')
 
 //connection
 const dbconnect = require('./config/connection')
@@ -24,7 +24,8 @@ app.use((req,res,next)=>{
 })
 
 //routes
-app.use('/api/workouts',workouts)
+app.use('/api/workouts',workoutRoutes)
+app.use('/api/user',userRoutes)
 
 
 
