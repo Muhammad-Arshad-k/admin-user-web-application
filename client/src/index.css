@@ -3,6 +3,7 @@
 :root{
   --primary:#1aac83;
     --error :#e7195a;
+    --boder:#1d007b;;
 }
 body{
   background-color: #f2f2f2;
@@ -17,6 +18,7 @@ header .container{
   max-width: 1400px;
   margin:0 auto;
   padding: 10px 20px;
+  display: flex;
   align-items: center;
   justify-content: space-between;
 
@@ -105,30 +107,52 @@ input.error{
   border: 1px solid var(--error);
 }
 
+/* navbar  */
 
+nav{
+  display: flex;
+  align-items: center;
+}
+nav a{
+  margin-left: 10px;
+}
+nav button{
+  background: #fff;
+  color: var(--boder);
+  border:2px solid var(--boder);
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-family: "poppins";
+  cursor: pointer;
+  font-size: 1em;
+}
+nav button:hover{
+  background: var(--boder);
+  color: #fff;
+  border:2px solid var(--boder);
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-family: "poppins";
+  cursor: pointer;
+  font-size: 1em;
+}
 
+/* auth form */
+form.signup, form.login{
+  max-width: 400px;
+  margin :40px auto;
+  padding:20px;
+  background: #ffffff;
+  border-radius: 6px;
+}
+.title{
+  text-align: center;
+  color: #1d007b;
+  text-decoration: underline;
+}                    
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+button[type="submit"] {
+  width: 100%;
+  font-size: 20px;
+}
 
